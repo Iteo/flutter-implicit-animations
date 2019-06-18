@@ -1,0 +1,4 @@
+theme : white
+theme-override: /PITCHME.css
+
+transition : slide

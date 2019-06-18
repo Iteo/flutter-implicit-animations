@@ -1,0 +1,30 @@
+body {
+  background: #F2F3F7;
+  background-color: #F2F3F7; }
+
+  .iteo-orange {
+    color: #ff6500
+  }
+
+  .iteo-blue {
+    color: #0000ff
+  }
+
+  .headline {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .reveal a {
+    color: #0000ff;
+    text-decoration: none;
+    -webkit-transition: color .15s ease;
+    -moz-transition: color .15s ease;
+    transition: color .15s ease;
+  }
+
+  .bold {
+
+    font-weight: 800;
+  }

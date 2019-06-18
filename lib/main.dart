@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:implicit_animations/animated_color_text.dart';
+import 'package:implicit_animations/explicit_animation_page.dart';
+import 'package:implicit_animations/explicit_animation_page_basic.dart';
+import 'package:implicit_animations/implicit_animation_page.dart';
+import 'package:implicit_animations/implicit_animation_page_basic.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,42 +16,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MainPage(),
-    );
-  }
-}
-
-class MainPage extends StatefulWidget {
-  @override
-  _MainPageState createState() => _MainPageState();
-}
-
-class _MainPageState extends State<MainPage> {
-  bool colorizeButton = false;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        child: Center(
-          child: Column(
-            children: <Widget>[
-              MaterialButton(
-                child: Text("Change state"),
-                onPressed: () {
-                  setState(() {
-                    colorizeButton = !colorizeButton;
-                  });
-                },
-              ),
-              AnimatedColorText(
-                text: "Text",
-                textColor: colorizeButton ? Colors.red : Colors.black,
-              )
-            ],
-          ),
-        ),
-      ),
+      home: ImplicitAnimationPage(),
+//      home: ImplicitAnimationPageBasic(),
     );
   }
 }
